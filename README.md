@@ -12,7 +12,8 @@ A simple weather app built with HTML, CSS, and JavaScript using the OpenWeatherM
 
 ## Live Demo
 
-[Click to View Live App](https://jaysingh63.github.io/weather-app/)
+[Click to View Live App]
+(https://jaysingh63.github.io/Whether-App/)
 
 ## Technologies Used
 
