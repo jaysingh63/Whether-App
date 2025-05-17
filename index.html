@@ -2,19 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Weather App</h1>
+    <button onclick="toggleDarkMode()">Dark Mode</button>
+  </header>
+
+  <section id="location">
     <input type="text" id="city" placeholder="Enter city name" />
     <button onclick="getWeather()">Get Weather</button>
+    <button onclick="useGeolocation()">Use My Location</button>
+  </section>
 
-    <div id="result" class="weather-box"></div>
-  </div>
+  <section id="weather-info">
+    <img id="weather-icon" src="" alt="Weather Icon" />
+    <p id="temperature">Temperature: --°C</p>
+    <p id="description">Description: --</p>
+    <p id="error-message"></p>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="unit-toggle">
+    <button onclick="toggleUnits()">Switch to Fahrenheit</button>
+  </section>
+
+  <section id="forecast">
+    <h3>5-Day Forecast</h3>
+    <div id="forecast-data"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Weather App</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
